@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+
+    <Button
+        android:id="@+id/button_add_users"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/lexenddeca"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_address_users" />
+
+    <EditText
+        android:id="@+id/ed_name_users"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_users"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/ed_email_users"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_users"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <EditText
+        android:id="@+id/ed_password_users"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Password"
+        android:inputType="text"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_users"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <EditText
+        android:id="@+id/ed_phonenumber"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_users"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/ed_address_users"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Address"
+        android:inputType="text"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_users"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Add Users"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

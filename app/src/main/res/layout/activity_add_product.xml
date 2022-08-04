@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+
+    <Button
+        android:id="@+id/button_add_product"
+        android:layout_width="126dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/lexenddeca"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anhsanpham"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <EditText
+        android:id="@+id/ed_tensanpham"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Tên sản phẩm"
+        android:inputType="text"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_product"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/ed_giasanpham"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Giá sản phẩm"
+        android:inputType="number"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_product"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <EditText
+        android:id="@+id/ed_mota"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ed_sign_in"
+        android:ems="10"
+        android:fontFamily="@font/lexenddeca"
+        android:hint="Mô tả"
+        android:inputType="text"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_product"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Add product"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexenddeca"
+        android:text="Ảnh sản phẩm"
+        android:textColor="@color/mauchu_managershop"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_mota"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <ImageView
+        android:id="@+id/anhsanpham"
+        android:layout_width="331dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_mota"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/bg_add" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="331dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_mota" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
