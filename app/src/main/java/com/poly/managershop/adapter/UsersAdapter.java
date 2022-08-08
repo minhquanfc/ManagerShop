@@ -70,7 +70,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersHolder> {
                     public void onClick(DialogInterface dialog, int which) {
                         String id = users.get_id();
                         Retrofit retrofit = new Retrofit.Builder()
-                                .baseUrl("http://192.168.1.243:3000/users/")
+                                .baseUrl("http://192.168.10.58:3000/users/")
                                 .addConverterFactory(GsonConverterFactory.create())
                                 .build();
                         ApiService apiService = retrofit.create(ApiService.class);

@@ -45,7 +45,7 @@ public class DashboardFragment extends Fragment {
     }
     private void getData() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.243:3000/products/")
+                .baseUrl("http://192.168.10.58:3000/products/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiService apiService = retrofit.create(ApiService.class);

@@ -61,7 +61,7 @@ public class UpdateUsersActivity extends AppCompatActivity {
         String address = ed_address_users_update.getText().toString().trim();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.243:3000/users/")
+                .baseUrl("http://192.168.10.58:3000/users/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiService apiService = retrofit.create(ApiService.class);
